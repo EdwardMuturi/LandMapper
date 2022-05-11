@@ -36,4 +36,8 @@ class CountriesRepository : CountriesDao{
 
         return data
     }
+
+    override fun findCountry(name: String): Country {
+        return findAllCountries().find { it.name == name } ?: throw NullPointerException("Country not found")
+    }
 }
