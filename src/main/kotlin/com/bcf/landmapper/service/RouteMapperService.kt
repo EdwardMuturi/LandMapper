@@ -5,14 +5,13 @@ import com.bcf.landmapper.entities.Country
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
-import kotlin.math.log
 
 
 @Service
 class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: CountriesDao){
     private val logger= LoggerFactory.getLogger(RouteMapperService::class.java)
 
-    suspend fun pathsTo(origin: String, destination: String): List<String> {
+    suspend fun pathBetween(origin: String, destination: String): List<String> {
         checkGeography(origin, destination)
 
         val visited: HashMap<Country, Boolean> = HashMap()
@@ -29,24 +28,24 @@ class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: Cou
     }
 
     private suspend fun findShortestRoute(destinations: ArrayDeque<Country>, currentCountry: Country, destination: String, visited: HashMap<Country, Boolean>, previous: HashMap<Country, Country>): Country {
-        var currentCountry1 = currentCountry
+        var localCurrentCountry = currentCountry
         while (destinations.isNotEmpty()) {
-            currentCountry1 = destinations.removeFirst()
-            logger.info("Visiting " + currentCountry1.name)
-            if (currentCountry1.name == destination) {
+            localCurrentCountry = destinations.removeFirst()
+            logger.info("Visiting " + localCurrentCountry.name)
+            if (localCurrentCountry.name == destination) {
                 logger.info("Origin and destination are equal")
                 break
             } else {
-                for (neighbour in currentCountry1.borders) {
+                for (neighbour in localCurrentCountry.borders) {
                     val neighbourCountry = countriesDao.findCountry(neighbour)
                     if (!visited.containsKey(neighbourCountry)) {
                         logger.info("... registering neighbour " + neighbourCountry.name)
                         destinations.add(neighbourCountry)
                         visited[neighbourCountry] = true
-                        previous[neighbourCountry] = currentCountry1
+                        previous[neighbourCountry] = localCurrentCountry
                         if (neighbourCountry.name == destination) {
                             logger.info("Shortest path found")
-                            currentCountry1 = neighbourCountry
+                            localCurrentCountry = neighbourCountry
                             break
                         }
                     } else {
@@ -55,7 +54,7 @@ class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: Cou
                 }
             }
         }
-        return currentCountry1
+        return localCurrentCountry
     }
 
     private fun checkDestinationNotFound(currentCountry: Country, destination: String) {
