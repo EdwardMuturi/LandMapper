@@ -2,12 +2,16 @@ package com.bcf.landmapper.service
 
 import com.bcf.landmapper.dao.CountriesDao
 import com.bcf.landmapper.entities.Country
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
+import kotlin.math.log
 
 
 @Service
 class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: CountriesDao){
+    private val logger= LoggerFactory.getLogger(RouteMapperService::class.java)
+
     suspend fun pathsTo(origin: String, destination: String): List<String> {
         checkGeography(origin, destination)
 
@@ -28,25 +32,25 @@ class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: Cou
         var currentCountry1 = currentCountry
         while (destinations.isNotEmpty()) {
             currentCountry1 = destinations.removeFirst()
-            println("Visiting " + currentCountry1.name)
+            logger.info("Visiting " + currentCountry1.name)
             if (currentCountry1.name == destination) {
-                println("Origin and destination are equal")
+                logger.info("Origin and destination are equal")
                 break
             } else {
                 for (neighbour in currentCountry1.borders) {
                     val neighbourCountry = countriesDao.findCountry(neighbour)
                     if (!visited.containsKey(neighbourCountry)) {
-                        println("... registering neighbour " + neighbourCountry.name)
+                        logger.info("... registering neighbour " + neighbourCountry.name)
                         destinations.add(neighbourCountry)
                         visited[neighbourCountry] = true
                         previous[neighbourCountry] = currentCountry1
                         if (neighbourCountry.name == destination) {
-                            println("Shortest path found")
+                            logger.info("Shortest path found")
                             currentCountry1 = neighbourCountry
                             break
                         }
                     } else {
-                        println("... skipping neighbour " + neighbourCountry.name)
+                        logger.info("... skipping neighbour " + neighbourCountry.name)
                     }
                 }
             }

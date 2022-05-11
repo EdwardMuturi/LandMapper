@@ -1,0 +1,638 @@
+2022-05-11 14:58:55,759 INFO com.bcf.landmapper.LandMapperApplicationKt [main] Starting LandMapperApplicationKt using Java 16.0.2 on Edwards-MacBook-Pro.local with PID 38426 (/Users/edwardmuturi/IdeaProjects/LandMapper/target/classes started by edwardmuturi in /Users/edwardmuturi/IdeaProjects/LandMapper)
+2022-05-11 14:58:55,764 DEBUG com.bcf.landmapper.LandMapperApplicationKt [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-11 14:58:55,765 INFO com.bcf.landmapper.LandMapperApplicationKt [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-11 14:58:57,464 TRACE org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping [main] 
+	c.b.l.c.RouteMapperController:
+	{GET [/Accept=application/json, /routing/{origin}/{destination}]}: findLandRoute(String,String,Continuation)
+2022-05-11 14:58:57,471 DEBUG org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping [main] 1 mappings in 'requestMappingHandlerMapping'
+2022-05-11 14:58:57,474 TRACE org.springframework.web.reactive.function.server.support.RouterFunctionMapping [main] 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-05-11 14:58:57,488 TRACE org.springframework.web.reactive.handler.SimpleUrlHandlerMapping [main] Mapped [/webjars/**] onto ResourceWebHandler [classpath [META-INF/resources/webjars/]]
+2022-05-11 14:58:57,488 TRACE org.springframework.web.reactive.handler.SimpleUrlHandlerMapping [main] Mapped [/**] onto ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+2022-05-11 14:58:57,488 DEBUG org.springframework.web.reactive.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-11 14:58:57,683 DEBUG org.springframework.web.reactive.result.method.annotation.ControllerMethodResolver [main] ControllerAdvice beans: none
+2022-05-11 14:58:57,732 DEBUG org.springframework.web.server.adapter.HttpWebHandlerAdapter [main] enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-11 14:58:57,901 INFO com.bcf.landmapper.LandMapperApplicationKt [main] Started LandMapperApplicationKt in 7.817 seconds (JVM running for 8.495)
+2022-05-11 14:59:20,916 INFO com.bcf.landmapper.LandMapperApplicationKt [main] Starting LandMapperApplicationKt using Java 16.0.2 on Edwards-MacBook-Pro.local with PID 38437 (/Users/edwardmuturi/IdeaProjects/LandMapper/target/classes started by edwardmuturi in /Users/edwardmuturi/IdeaProjects/LandMapper)
+2022-05-11 14:59:20,921 DEBUG com.bcf.landmapper.LandMapperApplicationKt [main] Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-11 14:59:20,923 INFO com.bcf.landmapper.LandMapperApplicationKt [main] No active profile set, falling back to 1 default profile: "default"
+2022-05-11 14:59:22,667 TRACE org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping [main] 
+	c.b.l.c.RouteMapperController:
+	{GET [/Accept=application/json, /routing/{origin}/{destination}]}: findLandRoute(String,String,Continuation)
+2022-05-11 14:59:22,672 DEBUG org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping [main] 1 mappings in 'requestMappingHandlerMapping'
+2022-05-11 14:59:22,680 TRACE org.springframework.web.reactive.function.server.support.RouterFunctionMapping [main] 0 RouterFunction(s) in 'routerFunctionMapping'
+2022-05-11 14:59:22,711 TRACE org.springframework.web.reactive.handler.SimpleUrlHandlerMapping [main] Mapped [/webjars/**] onto ResourceWebHandler [classpath [META-INF/resources/webjars/]]
+2022-05-11 14:59:22,712 TRACE org.springframework.web.reactive.handler.SimpleUrlHandlerMapping [main] Mapped [/**] onto ResourceWebHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/]]
+2022-05-11 14:59:22,712 DEBUG org.springframework.web.reactive.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-05-11 14:59:22,962 DEBUG org.springframework.web.reactive.result.method.annotation.ControllerMethodResolver [main] ControllerAdvice beans: none
+2022-05-11 14:59:23,310 DEBUG org.springframework.web.server.adapter.HttpWebHandlerAdapter [main] enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-05-11 14:59:23,634 INFO com.bcf.landmapper.LandMapperApplicationKt [main] Started LandMapperApplicationKt in 8.535 seconds (JVM running for 9.46)
+2022-05-11 15:01:05,212 TRACE org.springframework.web.server.adapter.HttpWebHandlerAdapter [reactor-http-nio-2] [975d6aca-1] HTTP GET "/routing/CZE/CZE", headers={masked}
+2022-05-11 15:01:05,391 DEBUG org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping [reactor-http-nio-2] [975d6aca-1] Mapped to com.bcf.landmapper.controller.RouteMapperController#findLandRoute(String, String, Continuation)
+2022-05-11 15:01:06,975 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting CZE
+2022-05-11 15:01:06,976 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Origin and destination are equal
+2022-05-11 15:01:07,089 DEBUG org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandler [DefaultDispatcher-worker-3] [975d6aca-1] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2022-05-11 15:01:07,089 DEBUG org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandler [DefaultDispatcher-worker-3] [975d6aca-1] 0..1 [com.bcf.landmapper.controller.dto.FindRouteResponseDto]
+2022-05-11 15:01:07,107 TRACE org.springframework.web.HttpLogging [DefaultDispatcher-worker-3] [975d6aca-1] Encoding [FindRouteResponseDto(route=[CZE], message=Land route found)]
+2022-05-11 15:01:08,059 TRACE org.springframework.web.server.adapter.HttpWebHandlerAdapter [reactor-http-nio-2] [975d6aca-1] Completed 200 OK, headers={masked}
+2022-05-11 15:01:08,060 TRACE org.springframework.web.HttpLogging [reactor-http-nio-2] [975d6aca-1, L:/127.0.0.1:9000 - R:/127.0.0.1:64194] Handling completed
+2022-05-11 15:02:15,569 TRACE org.springframework.web.server.adapter.HttpWebHandlerAdapter [reactor-http-nio-2] [975d6aca-2] HTTP GET "/routing/EGY/ZAF", headers={masked}
+2022-05-11 15:02:15,577 DEBUG org.springframework.web.reactive.result.method.annotation.RequestMappingHandlerMapping [reactor-http-nio-2] [975d6aca-2] Mapped to com.bcf.landmapper.controller.RouteMapperController#findLandRoute(String, String, Continuation)
+2022-05-11 15:02:15,681 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting EGY
+2022-05-11 15:02:15,705 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour ISR
+2022-05-11 15:02:15,724 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour LBY
+2022-05-11 15:02:15,742 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour PSE
+2022-05-11 15:02:15,756 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour SDN
+2022-05-11 15:02:15,756 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting ISR
+2022-05-11 15:02:15,769 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour EGY
+2022-05-11 15:02:15,787 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour JOR
+2022-05-11 15:02:15,800 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour LBN
+2022-05-11 15:02:15,815 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour PSE
+2022-05-11 15:02:15,833 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour SYR
+2022-05-11 15:02:15,833 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting LBY
+2022-05-11 15:02:15,856 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour DZA
+2022-05-11 15:02:15,878 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour TCD
+2022-05-11 15:02:15,899 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour EGY
+2022-05-11 15:02:15,911 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour NER
+2022-05-11 15:02:15,920 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour SDN
+2022-05-11 15:02:15,930 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour TUN
+2022-05-11 15:02:15,930 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting PSE
+2022-05-11 15:02:15,939 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour ISR
+2022-05-11 15:02:15,948 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour EGY
+2022-05-11 15:02:15,958 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour JOR
+2022-05-11 15:02:15,958 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting SDN
+2022-05-11 15:02:15,966 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour CAF
+2022-05-11 15:02:15,975 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour TCD
+2022-05-11 15:02:15,983 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour EGY
+2022-05-11 15:02:15,992 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour ERI
+2022-05-11 15:02:16,002 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour ETH
+2022-05-11 15:02:16,017 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour LBY
+2022-05-11 15:02:16,030 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour SSD
+2022-05-11 15:02:16,030 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting JOR
+2022-05-11 15:02:16,044 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour IRQ
+2022-05-11 15:02:16,064 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour ISR
+2022-05-11 15:02:16,079 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour PSE
+2022-05-11 15:02:16,098 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour SAU
+2022-05-11 15:02:16,112 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour SYR
+2022-05-11 15:02:16,113 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting LBN
+2022-05-11 15:02:16,121 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour ISR
+2022-05-11 15:02:16,130 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour SYR
+2022-05-11 15:02:16,130 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting SYR
+2022-05-11 15:02:16,138 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour IRQ
+2022-05-11 15:02:16,149 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour ISR
+2022-05-11 15:02:16,157 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour JOR
+2022-05-11 15:02:16,180 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour LBN
+2022-05-11 15:02:16,189 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... registering neighbour TUR
+2022-05-11 15:02:16,189 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] Visiting DZA
+2022-05-11 15:02:16,200 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour TUN
+2022-05-11 15:02:16,214 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour LBY
+2022-05-11 15:02:16,233 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-3] ... skipping neighbour NER
+2022-05-11 15:02:16,246 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour ESH
+2022-05-11 15:02:16,264 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MRT
+2022-05-11 15:02:16,277 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MLI
+2022-05-11 15:02:16,295 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MAR
+2022-05-11 15:02:16,295 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting TCD
+2022-05-11 15:02:16,308 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour CMR
+2022-05-11 15:02:16,320 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CAF
+2022-05-11 15:02:16,331 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LBY
+2022-05-11 15:02:16,340 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NER
+2022-05-11 15:02:16,348 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour NGA
+2022-05-11 15:02:16,357 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SDN
+2022-05-11 15:02:16,357 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting NER
+2022-05-11 15:02:16,365 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DZA
+2022-05-11 15:02:16,373 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BEN
+2022-05-11 15:02:16,381 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BFA
+2022-05-11 15:02:16,389 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TCD
+2022-05-11 15:02:16,397 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LBY
+2022-05-11 15:02:16,405 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MLI
+2022-05-11 15:02:16,418 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NGA
+2022-05-11 15:02:16,419 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting TUN
+2022-05-11 15:02:16,433 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DZA
+2022-05-11 15:02:16,446 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LBY
+2022-05-11 15:02:16,446 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting CAF
+2022-05-11 15:02:16,461 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CMR
+2022-05-11 15:02:16,473 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TCD
+2022-05-11 15:02:16,489 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour COD
+2022-05-11 15:02:16,500 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour COG
+2022-05-11 15:02:16,517 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SSD
+2022-05-11 15:02:16,530 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SDN
+2022-05-11 15:02:16,530 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ERI
+2022-05-11 15:02:16,543 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour DJI
+2022-05-11 15:02:16,557 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ETH
+2022-05-11 15:02:16,568 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SDN
+2022-05-11 15:02:16,568 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ETH
+2022-05-11 15:02:16,581 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DJI
+2022-05-11 15:02:16,593 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ERI
+2022-05-11 15:02:16,602 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour KEN
+2022-05-11 15:02:16,615 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SOM
+2022-05-11 15:02:16,631 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SSD
+2022-05-11 15:02:16,661 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SDN
+2022-05-11 15:02:16,662 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting SSD
+2022-05-11 15:02:16,681 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CAF
+2022-05-11 15:02:16,696 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:16,706 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ETH
+2022-05-11 15:02:16,718 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour KEN
+2022-05-11 15:02:16,728 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SDN
+2022-05-11 15:02:16,741 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour UGA
+2022-05-11 15:02:16,742 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting IRQ
+2022-05-11 15:02:16,755 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour IRN
+2022-05-11 15:02:16,768 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour JOR
+2022-05-11 15:02:16,778 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour KWT
+2022-05-11 15:02:16,786 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SAU
+2022-05-11 15:02:16,794 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SYR
+2022-05-11 15:02:16,801 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TUR
+2022-05-11 15:02:16,801 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting SAU
+2022-05-11 15:02:16,808 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRQ
+2022-05-11 15:02:16,815 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour JOR
+2022-05-11 15:02:16,822 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour KWT
+2022-05-11 15:02:16,830 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour OMN
+2022-05-11 15:02:16,840 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour QAT
+2022-05-11 15:02:16,852 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour ARE
+2022-05-11 15:02:16,863 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour YEM
+2022-05-11 15:02:16,864 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting TUR
+2022-05-11 15:02:16,874 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour ARM
+2022-05-11 15:02:16,885 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour AZE
+2022-05-11 15:02:16,899 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BGR
+2022-05-11 15:02:16,918 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GEO
+2022-05-11 15:02:16,927 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GRC
+2022-05-11 15:02:16,938 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRN
+2022-05-11 15:02:16,949 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRQ
+2022-05-11 15:02:16,956 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SYR
+2022-05-11 15:02:16,956 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ESH
+2022-05-11 15:02:16,964 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DZA
+2022-05-11 15:02:16,975 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MRT
+2022-05-11 15:02:16,984 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MAR
+2022-05-11 15:02:16,984 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MRT
+2022-05-11 15:02:16,993 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DZA
+2022-05-11 15:02:17,004 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MLI
+2022-05-11 15:02:17,014 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SEN
+2022-05-11 15:02:17,022 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ESH
+2022-05-11 15:02:17,022 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MLI
+2022-05-11 15:02:17,032 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DZA
+2022-05-11 15:02:17,048 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BFA
+2022-05-11 15:02:17,065 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GIN
+2022-05-11 15:02:17,080 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour CIV
+2022-05-11 15:02:17,104 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MRT
+2022-05-11 15:02:17,131 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NER
+2022-05-11 15:02:17,155 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SEN
+2022-05-11 15:02:17,156 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MAR
+2022-05-11 15:02:17,167 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DZA
+2022-05-11 15:02:17,175 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ESH
+2022-05-11 15:02:17,182 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour ESP
+2022-05-11 15:02:17,182 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting CMR
+2022-05-11 15:02:17,189 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CAF
+2022-05-11 15:02:17,197 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TCD
+2022-05-11 15:02:17,204 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COG
+2022-05-11 15:02:17,212 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GNQ
+2022-05-11 15:02:17,219 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GAB
+2022-05-11 15:02:17,227 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NGA
+2022-05-11 15:02:17,227 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting NGA
+2022-05-11 15:02:17,234 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BEN
+2022-05-11 15:02:17,242 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CMR
+2022-05-11 15:02:17,250 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TCD
+2022-05-11 15:02:17,266 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NER
+2022-05-11 15:02:17,266 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting BEN
+2022-05-11 15:02:17,279 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BFA
+2022-05-11 15:02:17,292 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NER
+2022-05-11 15:02:17,304 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NGA
+2022-05-11 15:02:17,315 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour TGO
+2022-05-11 15:02:17,315 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting BFA
+2022-05-11 15:02:17,324 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BEN
+2022-05-11 15:02:17,336 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CIV
+2022-05-11 15:02:17,347 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GHA
+2022-05-11 15:02:17,360 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MLI
+2022-05-11 15:02:17,369 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NER
+2022-05-11 15:02:17,377 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TGO
+2022-05-11 15:02:17,377 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting COD
+2022-05-11 15:02:17,384 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour AGO
+2022-05-11 15:02:17,392 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BDI
+2022-05-11 15:02:17,399 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CAF
+2022-05-11 15:02:17,407 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COG
+2022-05-11 15:02:17,414 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour RWA
+2022-05-11 15:02:17,421 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SSD
+2022-05-11 15:02:17,429 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour TZA
+2022-05-11 15:02:17,435 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UGA
+2022-05-11 15:02:17,443 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour ZMB
+2022-05-11 15:02:17,443 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting COG
+2022-05-11 15:02:17,451 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AGO
+2022-05-11 15:02:17,458 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CMR
+2022-05-11 15:02:17,465 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CAF
+2022-05-11 15:02:17,472 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:17,484 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GAB
+2022-05-11 15:02:17,484 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting DJI
+2022-05-11 15:02:17,494 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ERI
+2022-05-11 15:02:17,507 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ETH
+2022-05-11 15:02:17,520 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SOM
+2022-05-11 15:02:17,520 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting KEN
+2022-05-11 15:02:17,530 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ETH
+2022-05-11 15:02:17,544 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SOM
+2022-05-11 15:02:17,558 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SSD
+2022-05-11 15:02:17,566 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TZA
+2022-05-11 15:02:17,582 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UGA
+2022-05-11 15:02:17,583 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting SOM
+2022-05-11 15:02:17,591 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DJI
+2022-05-11 15:02:17,599 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ETH
+2022-05-11 15:02:17,605 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour KEN
+2022-05-11 15:02:17,606 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting UGA
+2022-05-11 15:02:17,614 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:17,621 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour KEN
+2022-05-11 15:02:17,628 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RWA
+2022-05-11 15:02:17,635 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SSD
+2022-05-11 15:02:17,642 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TZA
+2022-05-11 15:02:17,642 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting IRN
+2022-05-11 15:02:17,649 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour AFG
+2022-05-11 15:02:17,657 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ARM
+2022-05-11 15:02:17,666 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AZE
+2022-05-11 15:02:17,674 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRQ
+2022-05-11 15:02:17,683 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour PAK
+2022-05-11 15:02:17,694 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TUR
+2022-05-11 15:02:17,704 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour TKM
+2022-05-11 15:02:17,704 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting KWT
+2022-05-11 15:02:17,716 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRQ
+2022-05-11 15:02:17,729 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SAU
+2022-05-11 15:02:17,729 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting OMN
+2022-05-11 15:02:17,738 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SAU
+2022-05-11 15:02:17,750 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ARE
+2022-05-11 15:02:17,763 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour YEM
+2022-05-11 15:02:17,763 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting QAT
+2022-05-11 15:02:17,774 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SAU
+2022-05-11 15:02:17,775 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ARE
+2022-05-11 15:02:17,788 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour OMN
+2022-05-11 15:02:17,798 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SAU
+2022-05-11 15:02:17,798 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting YEM
+2022-05-11 15:02:17,805 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour OMN
+2022-05-11 15:02:17,813 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SAU
+2022-05-11 15:02:17,813 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ARM
+2022-05-11 15:02:17,819 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AZE
+2022-05-11 15:02:17,828 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GEO
+2022-05-11 15:02:17,836 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRN
+2022-05-11 15:02:17,843 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TUR
+2022-05-11 15:02:17,844 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting AZE
+2022-05-11 15:02:17,851 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ARM
+2022-05-11 15:02:17,859 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour GEO
+2022-05-11 15:02:17,866 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour IRN
+2022-05-11 15:02:17,874 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour RUS
+2022-05-11 15:02:17,883 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour TUR
+2022-05-11 15:02:17,884 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting BGR
+2022-05-11 15:02:17,896 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour GRC
+2022-05-11 15:02:17,906 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour MKD
+2022-05-11 15:02:17,917 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour ROU
+2022-05-11 15:02:17,927 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SRB
+2022-05-11 15:02:17,936 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TUR
+2022-05-11 15:02:17,936 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting GEO
+2022-05-11 15:02:17,952 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ARM
+2022-05-11 15:02:17,963 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AZE
+2022-05-11 15:02:17,974 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:17,984 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TUR
+2022-05-11 15:02:17,984 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting GRC
+2022-05-11 15:02:17,998 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour ALB
+2022-05-11 15:02:18,006 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BGR
+2022-05-11 15:02:18,014 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TUR
+2022-05-11 15:02:18,021 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MKD
+2022-05-11 15:02:18,021 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting SEN
+2022-05-11 15:02:18,030 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GMB
+2022-05-11 15:02:18,038 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GIN
+2022-05-11 15:02:18,046 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GNB
+2022-05-11 15:02:18,053 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MLI
+2022-05-11 15:02:18,062 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MRT
+2022-05-11 15:02:18,062 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting GIN
+2022-05-11 15:02:18,068 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CIV
+2022-05-11 15:02:18,076 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GNB
+2022-05-11 15:02:18,082 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour LBR
+2022-05-11 15:02:18,089 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MLI
+2022-05-11 15:02:18,099 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SEN
+2022-05-11 15:02:18,109 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SLE
+2022-05-11 15:02:18,109 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting CIV
+2022-05-11 15:02:18,119 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BFA
+2022-05-11 15:02:18,128 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GHA
+2022-05-11 15:02:18,141 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GIN
+2022-05-11 15:02:18,154 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LBR
+2022-05-11 15:02:18,166 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MLI
+2022-05-11 15:02:18,166 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ESP
+2022-05-11 15:02:18,182 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour AND
+2022-05-11 15:02:18,191 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour FRA
+2022-05-11 15:02:18,203 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour GIB
+2022-05-11 15:02:18,213 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour PRT
+2022-05-11 15:02:18,219 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MAR
+2022-05-11 15:02:18,219 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting GNQ
+2022-05-11 15:02:18,227 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CMR
+2022-05-11 15:02:18,233 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GAB
+2022-05-11 15:02:18,233 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting GAB
+2022-05-11 15:02:18,241 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CMR
+2022-05-11 15:02:18,248 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COG
+2022-05-11 15:02:18,255 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GNQ
+2022-05-11 15:02:18,255 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting TGO
+2022-05-11 15:02:18,263 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BEN
+2022-05-11 15:02:18,269 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BFA
+2022-05-11 15:02:18,278 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GHA
+2022-05-11 15:02:18,278 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting GHA
+2022-05-11 15:02:18,284 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BFA
+2022-05-11 15:02:18,291 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CIV
+2022-05-11 15:02:18,299 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TGO
+2022-05-11 15:02:18,299 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting AGO
+2022-05-11 15:02:18,308 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COG
+2022-05-11 15:02:18,320 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:18,330 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ZMB
+2022-05-11 15:02:18,345 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour NAM
+2022-05-11 15:02:18,346 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting BDI
+2022-05-11 15:02:18,366 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:18,385 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RWA
+2022-05-11 15:02:18,400 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TZA
+2022-05-11 15:02:18,400 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting RWA
+2022-05-11 15:02:18,416 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BDI
+2022-05-11 15:02:18,424 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:18,432 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TZA
+2022-05-11 15:02:18,440 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UGA
+2022-05-11 15:02:18,441 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting TZA
+2022-05-11 15:02:18,448 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BDI
+2022-05-11 15:02:18,455 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:18,463 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour KEN
+2022-05-11 15:02:18,470 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MWI
+2022-05-11 15:02:18,478 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MOZ
+2022-05-11 15:02:18,485 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RWA
+2022-05-11 15:02:18,492 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UGA
+2022-05-11 15:02:18,500 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ZMB
+2022-05-11 15:02:18,500 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ZMB
+2022-05-11 15:02:18,507 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AGO
+2022-05-11 15:02:18,520 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BWA
+2022-05-11 15:02:18,531 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour COD
+2022-05-11 15:02:18,541 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MWI
+2022-05-11 15:02:18,557 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MOZ
+2022-05-11 15:02:18,567 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NAM
+2022-05-11 15:02:18,580 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TZA
+2022-05-11 15:02:18,593 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour ZWE
+2022-05-11 15:02:18,593 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting AFG
+2022-05-11 15:02:18,606 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRN
+2022-05-11 15:02:18,619 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour PAK
+2022-05-11 15:02:18,627 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TKM
+2022-05-11 15:02:18,636 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour UZB
+2022-05-11 15:02:18,642 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour TJK
+2022-05-11 15:02:18,651 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour CHN
+2022-05-11 15:02:18,651 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting PAK
+2022-05-11 15:02:18,658 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AFG
+2022-05-11 15:02:18,666 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHN
+2022-05-11 15:02:18,672 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour IND
+2022-05-11 15:02:18,680 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRN
+2022-05-11 15:02:18,680 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting TKM
+2022-05-11 15:02:18,686 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AFG
+2022-05-11 15:02:18,694 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour IRN
+2022-05-11 15:02:18,700 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour KAZ
+2022-05-11 15:02:18,707 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UZB
+2022-05-11 15:02:18,707 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting RUS
+2022-05-11 15:02:18,715 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AZE
+2022-05-11 15:02:18,725 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BLR
+2022-05-11 15:02:18,735 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHN
+2022-05-11 15:02:18,747 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour EST
+2022-05-11 15:02:18,761 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour FIN
+2022-05-11 15:02:18,771 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GEO
+2022-05-11 15:02:18,784 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour KAZ
+2022-05-11 15:02:18,798 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour PRK
+2022-05-11 15:02:18,808 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour LVA
+2022-05-11 15:02:18,820 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour LTU
+2022-05-11 15:02:18,827 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MNG
+2022-05-11 15:02:18,835 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour NOR
+2022-05-11 15:02:18,842 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour POL
+2022-05-11 15:02:18,850 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour UKR
+2022-05-11 15:02:18,850 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MKD
+2022-05-11 15:02:18,858 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ALB
+2022-05-11 15:02:18,866 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BGR
+2022-05-11 15:02:18,873 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour GRC
+2022-05-11 15:02:18,881 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour UNK
+2022-05-11 15:02:18,888 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SRB
+2022-05-11 15:02:18,889 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ROU
+2022-05-11 15:02:18,897 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BGR
+2022-05-11 15:02:18,903 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour HUN
+2022-05-11 15:02:18,910 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MDA
+2022-05-11 15:02:18,917 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SRB
+2022-05-11 15:02:18,926 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UKR
+2022-05-11 15:02:18,926 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting SRB
+2022-05-11 15:02:18,937 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BIH
+2022-05-11 15:02:18,947 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BGR
+2022-05-11 15:02:18,957 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour HRV
+2022-05-11 15:02:18,969 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour HUN
+2022-05-11 15:02:18,979 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UNK
+2022-05-11 15:02:18,995 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour MKD
+2022-05-11 15:02:19,010 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour MNE
+2022-05-11 15:02:19,021 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ROU
+2022-05-11 15:02:19,022 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting ALB
+2022-05-11 15:02:19,033 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour MNE
+2022-05-11 15:02:19,042 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour GRC
+2022-05-11 15:02:19,051 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour MKD
+2022-05-11 15:02:19,058 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour UNK
+2022-05-11 15:02:19,058 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting GMB
+2022-05-11 15:02:19,065 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour SEN
+2022-05-11 15:02:19,065 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting GNB
+2022-05-11 15:02:19,071 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour GIN
+2022-05-11 15:02:19,079 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour SEN
+2022-05-11 15:02:19,079 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting LBR
+2022-05-11 15:02:19,087 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour GIN
+2022-05-11 15:02:19,094 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour CIV
+2022-05-11 15:02:19,100 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour SLE
+2022-05-11 15:02:19,101 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting SLE
+2022-05-11 15:02:19,107 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour GIN
+2022-05-11 15:02:19,114 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour LBR
+2022-05-11 15:02:19,114 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting AND
+2022-05-11 15:02:19,121 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour FRA
+2022-05-11 15:02:19,128 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ESP
+2022-05-11 15:02:19,129 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting FRA
+2022-05-11 15:02:19,139 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour AND
+2022-05-11 15:02:19,150 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour BEL
+2022-05-11 15:02:19,162 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour DEU
+2022-05-11 15:02:19,174 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour ITA
+2022-05-11 15:02:19,183 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour LUX
+2022-05-11 15:02:19,198 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour MCO
+2022-05-11 15:02:19,207 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ESP
+2022-05-11 15:02:19,216 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour CHE
+2022-05-11 15:02:19,217 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting GIB
+2022-05-11 15:02:19,229 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ESP
+2022-05-11 15:02:19,229 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting PRT
+2022-05-11 15:02:19,239 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ESP
+2022-05-11 15:02:19,239 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting NAM
+2022-05-11 15:02:19,247 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour AGO
+2022-05-11 15:02:19,253 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour BWA
+2022-05-11 15:02:19,261 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour ZAF
+2022-05-11 15:02:19,261 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Shortest path found
+2022-05-11 15:02:19,261 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting MWI
+2022-05-11 15:02:19,268 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour MOZ
+2022-05-11 15:02:19,275 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour TZA
+2022-05-11 15:02:19,282 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZMB
+2022-05-11 15:02:19,282 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting MOZ
+2022-05-11 15:02:19,289 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour MWI
+2022-05-11 15:02:19,297 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZAF
+2022-05-11 15:02:19,304 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour SWZ
+2022-05-11 15:02:19,311 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour TZA
+2022-05-11 15:02:19,317 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZMB
+2022-05-11 15:02:19,324 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZWE
+2022-05-11 15:02:19,324 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting BWA
+2022-05-11 15:02:19,332 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour NAM
+2022-05-11 15:02:19,341 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZAF
+2022-05-11 15:02:19,353 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZMB
+2022-05-11 15:02:19,362 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZWE
+2022-05-11 15:02:19,363 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting ZWE
+2022-05-11 15:02:19,374 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour BWA
+2022-05-11 15:02:19,384 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour MOZ
+2022-05-11 15:02:19,393 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZAF
+2022-05-11 15:02:19,407 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour ZMB
+2022-05-11 15:02:19,407 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting UZB
+2022-05-11 15:02:19,417 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour AFG
+2022-05-11 15:02:19,426 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour KAZ
+2022-05-11 15:02:19,438 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour KGZ
+2022-05-11 15:02:19,449 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour TJK
+2022-05-11 15:02:19,456 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour TKM
+2022-05-11 15:02:19,456 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting TJK
+2022-05-11 15:02:19,463 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour AFG
+2022-05-11 15:02:19,469 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour CHN
+2022-05-11 15:02:19,477 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour KGZ
+2022-05-11 15:02:19,483 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour UZB
+2022-05-11 15:02:19,484 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] Visiting CHN
+2022-05-11 15:02:19,491 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour AFG
+2022-05-11 15:02:19,498 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour BTN
+2022-05-11 15:02:19,505 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour MMR
+2022-05-11 15:02:19,512 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour HKG
+2022-05-11 15:02:19,519 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour IND
+2022-05-11 15:02:19,526 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour KAZ
+2022-05-11 15:02:19,533 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... registering neighbour NPL
+2022-05-11 15:02:19,540 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour PRK
+2022-05-11 15:02:19,552 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-2] ... skipping neighbour KGZ
+2022-05-11 15:02:19,564 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour LAO
+2022-05-11 15:02:19,575 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour MAC
+2022-05-11 15:02:19,590 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MNG
+2022-05-11 15:02:19,602 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour PAK
+2022-05-11 15:02:19,612 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,623 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TJK
+2022-05-11 15:02:19,633 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour VNM
+2022-05-11 15:02:19,633 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting IND
+2022-05-11 15:02:19,649 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour BGD
+2022-05-11 15:02:19,657 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BTN
+2022-05-11 15:02:19,665 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MMR
+2022-05-11 15:02:19,672 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHN
+2022-05-11 15:02:19,680 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NPL
+2022-05-11 15:02:19,687 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour PAK
+2022-05-11 15:02:19,687 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting KAZ
+2022-05-11 15:02:19,694 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHN
+2022-05-11 15:02:19,701 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour KGZ
+2022-05-11 15:02:19,708 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,715 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour TKM
+2022-05-11 15:02:19,722 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UZB
+2022-05-11 15:02:19,722 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting BLR
+2022-05-11 15:02:19,730 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LVA
+2022-05-11 15:02:19,736 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LTU
+2022-05-11 15:02:19,743 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour POL
+2022-05-11 15:02:19,753 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,766 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UKR
+2022-05-11 15:02:19,766 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting EST
+2022-05-11 15:02:19,775 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LVA
+2022-05-11 15:02:19,787 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,787 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting FIN
+2022-05-11 15:02:19,799 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NOR
+2022-05-11 15:02:19,808 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SWE
+2022-05-11 15:02:19,820 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,820 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting PRK
+2022-05-11 15:02:19,835 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHN
+2022-05-11 15:02:19,855 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour KOR
+2022-05-11 15:02:19,866 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,867 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting LVA
+2022-05-11 15:02:19,874 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BLR
+2022-05-11 15:02:19,881 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour EST
+2022-05-11 15:02:19,887 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LTU
+2022-05-11 15:02:19,895 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,895 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting LTU
+2022-05-11 15:02:19,901 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BLR
+2022-05-11 15:02:19,909 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LVA
+2022-05-11 15:02:19,915 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour POL
+2022-05-11 15:02:19,922 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,922 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MNG
+2022-05-11 15:02:19,929 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHN
+2022-05-11 15:02:19,936 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,936 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting NOR
+2022-05-11 15:02:19,943 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour FIN
+2022-05-11 15:02:19,950 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SWE
+2022-05-11 15:02:19,958 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:19,958 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting POL
+2022-05-11 15:02:19,971 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BLR
+2022-05-11 15:02:19,987 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour CZE
+2022-05-11 15:02:20,001 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DEU
+2022-05-11 15:02:20,011 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LTU
+2022-05-11 15:02:20,021 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:20,034 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SVK
+2022-05-11 15:02:20,047 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UKR
+2022-05-11 15:02:20,047 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting UKR
+2022-05-11 15:02:20,059 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BLR
+2022-05-11 15:02:20,070 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour HUN
+2022-05-11 15:02:20,079 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MDA
+2022-05-11 15:02:20,086 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour POL
+2022-05-11 15:02:20,093 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ROU
+2022-05-11 15:02:20,100 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour RUS
+2022-05-11 15:02:20,106 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SVK
+2022-05-11 15:02:20,106 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting UNK
+2022-05-11 15:02:20,113 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ALB
+2022-05-11 15:02:20,120 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MKD
+2022-05-11 15:02:20,127 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MNE
+2022-05-11 15:02:20,133 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SRB
+2022-05-11 15:02:20,133 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting HUN
+2022-05-11 15:02:20,141 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour AUT
+2022-05-11 15:02:20,152 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour HRV
+2022-05-11 15:02:20,158 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ROU
+2022-05-11 15:02:20,169 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SRB
+2022-05-11 15:02:20,183 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SVK
+2022-05-11 15:02:20,194 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SVN
+2022-05-11 15:02:20,214 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UKR
+2022-05-11 15:02:20,215 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MDA
+2022-05-11 15:02:20,228 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ROU
+2022-05-11 15:02:20,238 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UKR
+2022-05-11 15:02:20,239 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting BIH
+2022-05-11 15:02:20,255 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour HRV
+2022-05-11 15:02:20,267 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MNE
+2022-05-11 15:02:20,279 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SRB
+2022-05-11 15:02:20,279 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting HRV
+2022-05-11 15:02:20,291 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BIH
+2022-05-11 15:02:20,302 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour HUN
+2022-05-11 15:02:20,320 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour MNE
+2022-05-11 15:02:20,339 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SRB
+2022-05-11 15:02:20,352 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SVN
+2022-05-11 15:02:20,352 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MNE
+2022-05-11 15:02:20,365 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ALB
+2022-05-11 15:02:20,379 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BIH
+2022-05-11 15:02:20,390 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour HRV
+2022-05-11 15:02:20,404 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour UNK
+2022-05-11 15:02:20,416 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SRB
+2022-05-11 15:02:20,416 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting BEL
+2022-05-11 15:02:20,426 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour FRA
+2022-05-11 15:02:20,435 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DEU
+2022-05-11 15:02:20,448 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LUX
+2022-05-11 15:02:20,460 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour NLD
+2022-05-11 15:02:20,460 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting DEU
+2022-05-11 15:02:20,468 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AUT
+2022-05-11 15:02:20,485 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BEL
+2022-05-11 15:02:20,493 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CZE
+2022-05-11 15:02:20,505 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour DNK
+2022-05-11 15:02:20,515 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour FRA
+2022-05-11 15:02:20,522 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour LUX
+2022-05-11 15:02:20,532 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour NLD
+2022-05-11 15:02:20,541 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour POL
+2022-05-11 15:02:20,548 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHE
+2022-05-11 15:02:20,548 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ITA
+2022-05-11 15:02:20,555 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AUT
+2022-05-11 15:02:20,561 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour FRA
+2022-05-11 15:02:20,568 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour SMR
+2022-05-11 15:02:20,575 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour SVN
+2022-05-11 15:02:20,583 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour CHE
+2022-05-11 15:02:20,592 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour VAT
+2022-05-11 15:02:20,592 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting LUX
+2022-05-11 15:02:20,599 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour BEL
+2022-05-11 15:02:20,606 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour FRA
+2022-05-11 15:02:20,616 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DEU
+2022-05-11 15:02:20,617 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting MCO
+2022-05-11 15:02:20,626 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour FRA
+2022-05-11 15:02:20,626 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting CHE
+2022-05-11 15:02:20,635 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour AUT
+2022-05-11 15:02:20,647 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour FRA
+2022-05-11 15:02:20,660 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour ITA
+2022-05-11 15:02:20,669 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... registering neighbour LIE
+2022-05-11 15:02:20,683 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] ... skipping neighbour DEU
+2022-05-11 15:02:20,683 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Visiting ZAF
+2022-05-11 15:02:20,683 INFO com.bcf.landmapper.service.RouteMapperService [DefaultDispatcher-worker-1] Origin and destination are equal
+2022-05-11 15:02:20,698 DEBUG org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandler [DefaultDispatcher-worker-1] [975d6aca-2] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2022-05-11 15:02:20,698 DEBUG org.springframework.web.reactive.result.method.annotation.ResponseEntityResultHandler [DefaultDispatcher-worker-1] [975d6aca-2] 0..1 [com.bcf.landmapper.controller.dto.FindRouteResponseDto]
+2022-05-11 15:02:20,701 TRACE org.springframework.web.HttpLogging [DefaultDispatcher-worker-1] [975d6aca-2] Encoding [FindRouteResponseDto(route=[EGY, SDN, CAF, COD, AGO, NAM, ZAF], message=Land route found)]
+2022-05-11 15:02:20,710 TRACE org.springframework.web.server.adapter.HttpWebHandlerAdapter [reactor-http-nio-2] [975d6aca-2] Completed 200 OK, headers={masked}
+2022-05-11 15:02:20,710 TRACE org.springframework.web.HttpLogging [reactor-http-nio-2] [975d6aca-2, L:/127.0.0.1:9000 - R:/127.0.0.1:64194] Handling completed
