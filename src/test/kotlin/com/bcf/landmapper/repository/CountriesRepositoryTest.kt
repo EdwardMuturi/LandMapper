@@ -13,4 +13,12 @@ internal class CountriesRepositoryTest {
             Assertions.assertThat(countries).isNotEmpty
         }
     }
+
+    @Test
+    fun `should provide a valid country`(){
+        runBlocking {
+            val countries = countriesRepository.findAllCountries()
+            Assertions.assertThat(countries).allMatch{it.name.isNotBlank() && it.region.isNotBlank()}
+        }
+    }
 }
