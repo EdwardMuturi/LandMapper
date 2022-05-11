@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 
 @Service
-class RouteMapperService (@Qualifier("countriesRepository") val countriesDao: CountriesDao){
+class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: CountriesDao){
     private val visited: HashMap<Country, Boolean> = HashMap()
     private val previous: HashMap<Country, Country> = HashMap()
 
