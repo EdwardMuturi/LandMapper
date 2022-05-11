@@ -5,80 +5,44 @@ import com.bcf.landmapper.entities.Country
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 
+
 @Service
 class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: CountriesDao){
-    private val visited: HashMap<Country, Boolean> = HashMap()
-    private val previous: HashMap<Country, Country> = HashMap()
+    suspend fun pathsTo(origin: String, destination: String): List<String> {
+        checkGeography(origin, destination)
 
-    fun paths(origin: String, destination: String): List<String> {
+        val visited: HashMap<Country, Boolean> = HashMap()
+        val previous: HashMap<Country, Country> = HashMap()
         var currentCountry = countriesDao.findCountry(origin)
-        val pivot = ArrayDeque<Country>()
+        val destinations = ArrayDeque<Country>()
 
-        pivot.add(currentCountry)
+        destinations.addLast(currentCountry)
         visited[currentCountry] = true
 
-        while (pivot.isNotEmpty()) {
-            currentCountry = pivot.removeAt(0)
-            println("Visiting " + currentCountry.name)
-            if (currentCountry.equals(destination)) {
-                println("Origin and destination are equal")
-                break
-            } else {
-                for (neighbour in currentCountry.borders) {
-                    val neighbourCountry = countriesDao.findCountry(neighbour)
-                    if (!visited.containsKey(neighbourCountry)) {
-                        println("... registering neighbour " + neighbourCountry.name)
-                        pivot.add(neighbourCountry)
-                        visited[neighbourCountry] = true
-                        previous[neighbourCountry] = currentCountry
-                        if (neighbourCountry.equals(destination)) {
-                            println("Shortest path found")
-                            currentCountry = neighbourCountry
-                            break
-                        }
-                    } else {
-                        println("... skipping neighbour " + neighbourCountry.name)
-                    }
-                }
-            }
-        }
-        if (!currentCountry.equals(destination)) {
-            throw java.lang.IllegalStateException("Cannot reach the path")
-        }
-        val path: MutableList<Country> = ArrayList()
-        var node: Country? = countriesDao.findCountry(destination)
-        while (node != null) {
-            path.add(node)
-            node = previous[node]
-        }
-        return path.map { it.name }//.asReversed()
-//        .collect(MyCollectors.reversing())
+        currentCountry = findShortestRoute(destinations, currentCountry, destination, visited, previous)
+        checkDestinationNotFound(currentCountry, destination)
+        return generateFoundRoute(destination, previous)
     }
 
-    fun pathsTo(origin: String, destination: String): List<String> {
-        var currentCountry = countriesDao.findCountry(origin)
-        val pivot = ArrayDeque<Country>()
-
-        pivot.add(currentCountry)
-        visited[currentCountry] = true
-
-        while (pivot.isNotEmpty()) {
-            currentCountry = pivot.removeAt(0)
-            println("Visiting " + currentCountry.name)
-            if (currentCountry.equals(destination)) {
+    private suspend fun findShortestRoute(destinations: ArrayDeque<Country>, currentCountry: Country, destination: String, visited: HashMap<Country, Boolean>, previous: HashMap<Country, Country>): Country {
+        var currentCountry1 = currentCountry
+        while (destinations.isNotEmpty()) {
+            currentCountry1 = destinations.removeFirst()
+            println("Visiting " + currentCountry1.name)
+            if (currentCountry1.name == destination) {
                 println("Origin and destination are equal")
                 break
             } else {
-                for (neighbour in currentCountry.borders) {
+                for (neighbour in currentCountry1.borders) {
                     val neighbourCountry = countriesDao.findCountry(neighbour)
                     if (!visited.containsKey(neighbourCountry)) {
                         println("... registering neighbour " + neighbourCountry.name)
-                        pivot.add(neighbourCountry)
+                        destinations.add(neighbourCountry)
                         visited[neighbourCountry] = true
-                        previous[neighbourCountry] = currentCountry
-                        if (neighbourCountry.equals(destination)) {
+                        previous[neighbourCountry] = currentCountry1
+                        if (neighbourCountry.name == destination) {
                             println("Shortest path found")
-                            currentCountry = neighbourCountry
+                            currentCountry1 = neighbourCountry
                             break
                         }
                     } else {
@@ -87,16 +51,28 @@ class RouteMapperService(@Qualifier("countriesRepository") val countriesDao: Cou
                 }
             }
         }
-        if (!currentCountry.equals(destination)) {
-            throw java.lang.IllegalStateException("Cannot reach the path")
+        return currentCountry1
+    }
+
+    private fun checkDestinationNotFound(currentCountry: Country, destination: String) {
+        if (currentCountry.name != destination) {
+            throw IllegalStateException("Cannot reach the destination")
         }
+    }
+
+    private suspend fun checkGeography(origin: String, destination: String) {
+        if (countriesDao.findCountry(origin).region != countriesDao.findCountry(destination).region)
+            throw java.lang.IllegalStateException("Countries not connected by land")
+    }
+
+    private suspend fun generateFoundRoute(destination: String, previous: HashMap<Country, Country>): List<String> {
         val path: MutableList<Country> = ArrayList()
         var node: Country? = countriesDao.findCountry(destination)
+
         while (node != null) {
             path.add(node)
             node = previous[node]
         }
-        return path.map { it.name }//.asReversed()
-//        .collect(MyCollectors.reversing())
+        return path.map { it.name }.asReversed()
     }
 }

@@ -1,5 +1,6 @@
 package com.bcf.landmapper.controller
 
+import com.bcf.landmapper.controller.dto.FindRouteResponseDto
 import com.bcf.landmapper.service.RouteMapperService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus
@@ -12,8 +13,12 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class RouteMapperController @Autowired constructor(val routeMapperService: RouteMapperService){
     @GetMapping("routing/{origin}/{destination}",  "Accept=application/json")
-    fun findLandRoute(@PathVariable("origin") origin: String, @PathVariable("destination") destination: String) : ResponseEntity<List<String>>{
-        return try { ResponseEntity(routeMapperService.paths(origin, destination), HttpStatus.OK) }
-        catch (e: Exception){ ResponseEntity(HttpStatus.BAD_REQUEST) }
+    suspend fun findLandRoute(@PathVariable("origin") origin: String, @PathVariable("destination") destination: String) : ResponseEntity<FindRouteResponseDto>{
+        return try {
+            val route= routeMapperService.pathsTo(origin, destination)
+            ResponseEntity(FindRouteResponseDto(route, "Land route found"), HttpStatus.OK)
+        } catch (e: Exception){
+            ResponseEntity(FindRouteResponseDto(message = e.localizedMessage),HttpStatus.BAD_REQUEST)
+        }
     }
 }
