@@ -6,7 +6,7 @@ and calculates the route by utilizing individual countries border information.
 Specifications:
 * Spring Boot, Maven
 * Data link: https://raw.githubusercontent.com/mledoze/countries/master/countries.json
-* The application exposes REST endpoint /routing/{origin}/{destination} that
+* The application exposes REST endpoint `/routing/{origin}/{destination}` that
 returns a list of border crossings to get from origin to destination
 * Single route is returned if the journey is possible
 * Algorithm needs to be efficient
@@ -20,11 +20,10 @@ returns a list of border crossings to get from origin to destination
   }
   ```
   
-### How to Build App (Unix)
-1. Generate `.jar` executable by running the following command in project root directory `mvn clean package`. The executable
+### How to Run App
+1. Generate `.jar` executable by running the following command in project root directory `mvn clean install`. The executable
 can be found in the `target` folder
-2. Run the executable by executing the command: `java -jar target/<your-jar-name>.jar`
-3. Access the app via Postman / Insomnia / Command line: `curl --request GET \
-   --url http://localhost:8080/routing/{origin}/{destination}`
+2. Run the executable by executing the command: `mvn spring-boot:run`. The app will run on localhost port 8080.
+   1. You access the app by making a `GET` request to this URL: `http://localhost:8080/routing/{origin}/{destination}`
 
 
